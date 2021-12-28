@@ -59,7 +59,7 @@
         setTimeout(textdelete, 500);
         ka.splice(number,1);
         score=score+1
-        if(score>0){
+        if(score>4){
           finish();
         }
        set(Math.floor(Math.random() * ka.length));

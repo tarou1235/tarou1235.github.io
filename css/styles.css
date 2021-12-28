@@ -1,0 +1,193 @@
+.area {
+  /* boxレイアウトの指定 */
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+
+  /* 配置したボックスを左右中央寄せにする */
+  box-pack: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+
+}
+
+
+
+body {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  background: #eee;
+}
+
+.container {
+  margin: 5px auto;
+  width: 270px;
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#timer {
+  background: #ddd;
+  height: 120px;
+  line-height: 120px;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  width: 80px;
+  height: 45px;
+  line-height: 45px;
+  background: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inactive {
+  opacity: 0.6;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  font-size: 40px;
+  padding: 100px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay #time {
+  font-size: 60px;
+  font-weight: bold;
+  color: gold;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn1 {
+  width: 200px;
+  height: 60px;
+  background: #83c0f1;
+  border-radius: 10px;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 42px;
+  cursor: pointer;
+}
+.btn2 {
+  width: 1000px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 60px;
+  color: rgb(241, 10, 10);
+  font-weight: bold;
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.item {
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+  color: #444;
+  border: solid 5px #444;
+  
+}
+
+
+  #center > input {
+      width: 84px;
+      height: 84px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 84px;
+  margin-left: -5px;
+  }
+  
+.kanji {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.yajirushi {
+    border: none !important;
+    padding: 5px;
+}
+
+@media (max-width: 500px) {
+
+.item {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: #444;
+  border: solid 5px #444;
+  line-height: 1;
+}
+
+.yajirushi {
+    border: none !important;
+    padding: 0px;
+    font-size: 30px;
+    line-height: 54px;
+}
+
+  #center > input {
+      width: 55px;
+      height: 55px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 55px;
+  padding: 0 !important;
+  -webkit-appearance: none !important;
+  
+  }
+
+}
